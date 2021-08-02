@@ -1,10 +1,8 @@
 const path = require('path')
 
-const PATH_PREFIX = process.env.PATH_PREFIX
-
 module.exports = {
   // pathPrefix: PATH_PREFIX || `/foam-template-gatsby-kb`, // a. If you are using github pages, this should be the name of your repo
-  pathPrefix: PATH_PREFIX || `/`, // b. If you are using Netlify/Vercel, your can keep it this way
+  pathPrefix: '/notes', // b. If you are using Netlify/Vercel, your can keep it this way
   siteMetadata: {
     // some SEO configs using by gatsby-theme-kb
     title: `Note Net`, // Replace it with your site's title
@@ -12,9 +10,8 @@ module.exports = {
     description: `My personal knowledge base`, // Replace it with your site's description
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-sass`
-    },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-theme-kb`,
       options: {
@@ -41,7 +38,7 @@ module.exports = {
           defaultPluginMdx.options.gatsbyRemarkPlugins.push({
             resolve: "gatsby-remark-shiki-twoslash",
             options: {
-              theme: "github-light",
+              theme: "github-dark",
               useNodeModules: true,
               nodeModulesTypesPath: path.join(__dirname, "..", "node_modules"),
             },

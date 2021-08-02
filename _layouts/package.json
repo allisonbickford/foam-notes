@@ -20,10 +20,12 @@
     "framer-motion": "^4",
     "gatsby": "^3.0.3",
     "gatsby-plugin-copy-files-enhanced": "^1.1.1",
+    "gatsby-plugin-react-helmet": "^4.10.0",
     "gatsby-plugin-sass": "^4.10.0",
     "gatsby-remark-copy-linked-files": "^2.10.0",
     "gatsby-remark-shiki-twoslash": "^3.0.18",
     "gatsby-theme-kb": "^0.7.5",
+    "react-helmet": "^6.1.0",
     "sass": "^1.37.0"
   }
 }
