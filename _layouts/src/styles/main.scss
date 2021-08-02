@@ -1,0 +1,23 @@
+html {
+  --background-color: #fff;
+  --text-color: #121416d8;
+  --link-color: #543fd7;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background-color: #212a2e;
+    --text-color: #F7F8F8;
+    --link-color: #828fff;
+  }
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+code {
+  font-size: 0.9em;
+}
+

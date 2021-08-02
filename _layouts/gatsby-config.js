@@ -13,6 +13,9 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-sass`
+    },
+    {
       resolve: `gatsby-theme-kb`,
       options: {
         rootNote: '/readme',
@@ -36,9 +39,11 @@ module.exports = {
 
           // an example of syntax highlighting
           defaultPluginMdx.options.gatsbyRemarkPlugins.push({
-            resolve: 'gatsby-remark-prismjs',
+            resolve: "gatsby-remark-shiki-twoslash",
             options: {
-              noInlineHighlight: true,
+              theme: "github-light",
+              useNodeModules: true,
+              nodeModulesTypesPath: path.join(__dirname, "..", "node_modules"),
             },
           })
           return defaultPluginMdx
