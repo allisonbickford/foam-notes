@@ -27,5 +27,8 @@
     "gatsby-theme-kb": "^0.7.5",
     "react-helmet": "^6.1.0",
     "sass": "^1.37.0"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.2"
   }
 }

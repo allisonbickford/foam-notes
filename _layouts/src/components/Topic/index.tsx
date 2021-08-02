@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import Topic from "./index"
-import "./styles/main.scss"
-import "./styles/overrides.scss"
+import "../../styles/main.scss"
+import "../../styles/overrides.scss"
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby";
 
