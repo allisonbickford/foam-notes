@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfoam_template_gatsby_kb=self.webpackChunkfoam_template_gatsby_kb||[]).push([[691],{231:function(e,t,o){o.r(t);var n=o(7294);t.default=function(){return(0,n.useEffect)((function(){document.location&&document.location.href.includes("allisonbickford")&&document.location.replace("/notes/home"),document.location&&document.location.href.includes("localhost")&&document.location.replace("/home")})),n.createElement("html",null)}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-e649f10501d8fbd624f5.js.map
